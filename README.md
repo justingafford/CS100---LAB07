@@ -3,7 +3,7 @@
 **You *must* work in a group of two for this lab**
 
 In the previous strategy lab you wrote a function ```void print()``` that iterated through the collections of equations trees and prints their ```double evaluation()``` values. In this lab you will extend that functionality to allow for printing of the ```double evaluation()``` values in several different formats. You first task is to create three new classes for printing the values as a double (```class DoublePrint```), as hex values (```class HexPrint```) and as a binary number (```class BinaryPrint```). All of these classes will inherit from a new abstract base class for printing (```class BasePrint```).
-```
+```c++
 class BasePrint {
 	private:
 		/* Value to Print */
@@ -26,7 +26,7 @@ Once you have created **and commited** the base class ```BasePrint```, you can c
 **Testing Point:** You should create a short test program that instantiates each of the ```BasePrint``` concrete subclasses and calls ```void print()``` on them to make sure your classes are working correctly. This program will evolve as you create more print methods. The test program should be present in all of your commits. You want to test as you go, not wait until the end to test. 
 
 Once you have created these printing objects and tested them you will create a set of factories to guarantee that the same printing method is used throughout your program. Start by creating an abstract base factory class (```class BaseFactory```).
-```
+```c++
 class BaseFactory {
 	public:
 		/* Constructor */
