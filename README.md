@@ -53,4 +53,4 @@ b | Set the single factory to a ```BinaryFactory```
 ## Submission
 To receive credit for this lab you must show an example program to your TA that demonstrates the full functionality of this pattern, and must explain to your TA the structure of your abstract factory pattern.
 
-Once you have demo’d to your TA, submit a tarball of your code to the lab submission on iLearn. Also, your code should be fully merged, committed, and pushed to your github repo.
+Make sure your code has been fully merged and the master branch has been committed and pushed to github. Submit to ilearn a screenshot of your github push. 
