@@ -36,7 +36,7 @@ class BaseFactory {
 		BaseFactory();
 
 		/* Pure Virtual Generate Function */
-		BasePrint* generatePrint(double value) = 0;
+		virtual BasePrint* generatePrint(double value) = 0;
 }
 ```
 
