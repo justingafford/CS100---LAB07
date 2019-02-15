@@ -20,7 +20,7 @@ class BaseFactory {
 		/* Pure Virtual Production Function */
         virtual Op* createOp(double value) = 0;
         virtual Rand* createRand() = 0;
-}
+};
 ```
 
 Once you have created the base class for the abstract factory you will need to create three concrete subclass factories capable of producing the proper object from each category of products (standard double, scientific, and precision).
