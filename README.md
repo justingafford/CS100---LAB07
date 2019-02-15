@@ -23,7 +23,7 @@ class BaseFactory {
 }
 ```
 
-Once you have created the base class for the abstract factory you will need to create three concrete subclasses for creating the proper element from each category of products (standard double, hex, and binary). 
+Once you have created the base class for the abstract factory you will need to create three concrete subclass factories capable of producing the proper object from each category of products (standard double, scientific, and precision).
 
 ## Submission
 
