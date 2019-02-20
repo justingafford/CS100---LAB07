@@ -15,7 +15,7 @@ You might find [this link on stringstreams](https://thispointer.com/c-convert-do
 class BaseFactory {
     public:
         /* Constructor */
-        BaseFactory();
+        BaseFactory() {}
 
         /* Pure Virtual Production Function */
         virtual Op* createOp(double value) = 0;
