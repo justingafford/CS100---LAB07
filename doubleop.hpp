@@ -14,11 +14,7 @@ class DoubleOp : public Op
         DoubleOp(double n) { num = n; };
         double evaluate() {};
         string stringify() {
-            ostringstream obj;
-            obj << std::scientific;
-            obj << num;
-            string i = obj.str();
-            return to_string(i);
+            return to_string(num);
         };      
 };
 
