@@ -1,17 +1,17 @@
 #ifndef DOUBLEOP_H
-#define SCIOP_H
+#define DOUBLEOP_H
 #include "base_factory.hpp"
-#include "op.hpp"
+#include "Op.hpp"
 #include <sstream>
 
 
-class SciOp : public Op
+class DoubleOp : public Op
 {
     protected:
         double num;
     public:
-        SciOp() { num = 0; };
-        SciOp(double n) { num = n; };
+        DoubleOp() { num = 0; };
+        DoubleOp(double n) { num = n; };
         double evaluate() {};
         string stringify() {
             ostringstream obj;
