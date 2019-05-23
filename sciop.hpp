@@ -1,7 +1,7 @@
 #ifndef_SCIOP_H
 #define SCIOP_H
 #include "base_factory.hpp"
-#include "op.hpp"
+#include "Op.hpp"
 #include <sstream>
 
 
