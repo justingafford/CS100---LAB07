@@ -16,7 +16,7 @@ class SciOp : public Op
         string stringify() {
             ostringstream obj;
             obj << std::scientific;
-            obj <<
+            obj << num;
             string i = obj.str();
             return to_string(i);
         };      
