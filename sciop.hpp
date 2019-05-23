@@ -18,7 +18,7 @@ class SciOp : public Op
             obj << std::scientific;
             obj << num;
             string i = obj.str();
-            return to_string(i);
+            return i;
         };      
 };
 
