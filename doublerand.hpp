@@ -13,7 +13,7 @@ class DoubleRand : public Rand
         DoubleRand() { num = rand % 100; };
         double evaluate() {};
         string stringify() {
-            return num;
+            return to_string(num);
         };      
 };
 
