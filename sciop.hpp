@@ -1,5 +1,5 @@
 #ifndef_SCIOP_H
-#define SCIOP_
+#define SCIOP_H
 
 #include "base_factory.hpp"
 #include <sstream>
