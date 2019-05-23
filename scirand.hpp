@@ -1,24 +1,24 @@
-fndef_SCIRAND_H
+#ifndef SCIRAND_H
 #define SCIRAND_H
-
 #include "base_factory.hpp"
+#include "Rand.hpp"
 #include <sstream>
 
 
 class SciRand : public Rand
 {
-    Rand* createRand()
-    {
-        ostringstream obj;
-        obj << std::scientific;
-        double value = rand()%100;
-        obj << value;
-        string i = obj.str();
-        SciRand* temp = new SciRand(i);
-        return temp ;
-    }
-
-}
+    protected:
+        double num;
+    public:
+        SciRand() { num = rand % 100; };
+        double evaluate() {};
+        string stringify() {
+            ostringstream obj;
+            obj << std::scientific;
+            obj << num;
+            string i = obj.str();
+            return i;
+        };      
+};
 
 #endif
-
