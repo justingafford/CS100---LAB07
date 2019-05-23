@@ -5,10 +5,10 @@ class SciFactory : public BaseFactory
 {
  public:
      SciFactory(){};
-     SciOp* createOp(double value){
+     Op* createOp(double value){
          SciOp* temp = new SciOp* (value); 
          return temp;
      };
-     SciRand* createRand(){return new SciRand()};
+     Rand* createRand(){return new SciRand()};
 
 }
