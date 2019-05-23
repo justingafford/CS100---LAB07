@@ -13,11 +13,7 @@ class DoubleRand : public Rand
         DoubleRand() { num = rand % 100; };
         double evaluate() {};
         string stringify() {
-            ostringstream obj;
-            obj << std::scientific;
-            obj << num;
-            string i = obj.str();
-            return i;
+            return num;
         };      
 };
 
