@@ -1,9 +1,11 @@
 #ifndef SCIFACTORY_H
 #define SCIFACTORY_H
 
-class SciFactory : BaseFactory
+class SciFactory : public BaseFactory
 {
-     Op* createOp(double value){SciOp* temp = new SciOp* value; return temp;};
-     Rand* createRand(){return new SciRand()};
+ public:
+     SciFactory(){};
+     SciOp* createOp(double value){SciOp* temp = new SciOp* value; return temp;};
+     SciRand* createRand(){return new SciRand()};
 
 }
