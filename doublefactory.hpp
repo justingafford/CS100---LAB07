@@ -3,8 +3,7 @@
 #include "basefactory.hpp"
 #include "doubleop.hpp"
 #include "doublerand.hpp"
-class DoubleFactory : public BaseFactory
-{
+class DoubleFactory : public BaseFactory {
  public:
      DoubleFactory(){};
      Op* createOp(double value){
