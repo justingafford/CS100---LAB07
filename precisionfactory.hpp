@@ -1,5 +1,8 @@
 #ifndef PRECISIONFACTORY_H
 #define PRECISIONFACTORY_H
+#include "basefactory.hpp"
+#include "precisionop.hpp"
+#include "precisionrand.hpp"
 
 class PrecisionFactory : public BaseFactory
 {
