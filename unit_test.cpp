@@ -20,19 +20,19 @@
 
 TEST(OpTests, DoubleTest)  {
     BaseFactory* factory = new DoubleFactory;
-    DoubleOp* doub = factory->createOp(420.696969696);
+    Op* doub = factory->createOp(420.696969696);
     ASSERT_EQ(doub->stringify(),"420.69696");
 }
 
 TEST(OpTests, SciTest)  {
     BaseFactory* factory = new DoubleFactory;
-    SciOp* sci = factory->createOp(420.696969696);
+    Op* sci = factory->createOp(420.696969696);
     ASSERT_EQ(sci->stringify(),"4.26969e+02");
 }
 
 TEST(OpTests, PrecisionTest)  {
     BaseFactory* factory = new DoubleFactory;
-    PrecisionOp* precis = factory->createOp(420.696969696);
+    Op* precis = factory->createOp(420.696969696);
     ASSERT_EQ(precis->stringify(),"420.6969696");
 }
 
