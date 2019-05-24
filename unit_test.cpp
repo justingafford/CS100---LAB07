@@ -46,19 +46,19 @@ class RandMock: public Rand {
 
 TEST(RandTests, DoubleTest)  {
     BaseFactory* factory = new DoubleFactory;
-    RandMock* randDouble = factory->createRand();
+    Rand* randDouble = factory->createRand();
     ASSERT_EQ(randDouble->stringify(),"314.159265");
 }
 
 TEST(RandTests, SciTest)  {
     BaseFactory* factory = new SciFactory;
-    RandMock* randSci = factory->createRand();
+    Rand* randSci = factory->createRand();
     ASSERT_EQ(randSci->stringify(),"3.14159e+02");
 }
 
 TEST(RandTests, PrecisionTest)  {
     BaseFactory* factory = new PrecisionFactory;
-    RandMock* randPrecision = factory->createRand();
+    Rand* randPrecision = factory->createRand();
     ASSERT_EQ(randPrecision->stringify(),"314.159265359");
 }
 
