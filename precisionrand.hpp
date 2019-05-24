@@ -14,7 +14,7 @@ class PrecisionRand : public Rand
         double evaluate() {};
         string stringify() {
             ostringstream obj;
-            obj << std::fixed;
+            obj << std::fixed << std::setprecision(9);
             obj << num;
             string i = obj.str();
             return i;
