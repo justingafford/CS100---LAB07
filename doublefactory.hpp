@@ -13,4 +13,4 @@ class DoubleFactory : public BaseFactory {
      Rand* createRand(){return new DoubleRand()};
 
 }
-
+#endif
