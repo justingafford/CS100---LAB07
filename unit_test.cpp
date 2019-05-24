@@ -16,6 +16,7 @@
 #include "Add.hpp"
 #include "Sub.hpp"
 #include "Pow.hpp"
+#include <iostream>
 #include "gtest/gtest.h"
 
 TEST(OpTests, DoubleTest)  {
@@ -47,19 +48,19 @@ class RandMock: public Rand {
 TEST(RandTests, DoubleTest)  {
     BaseFactory* factory = new DoubleFactory;
     Rand* randDouble = factory->createRand();
-    ASSERT_EQ(randDouble->stringify(),"314.15926523232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323");
+    cout << "Random Double number(whole number from 1-100): " << randDouble->stringify() << endl;
 }
 
 TEST(RandTests, SciTest)  {
     BaseFactory* factory = new SciFactory;
     Rand* randSci = factory->createRand();
-    ASSERT_EQ(randSci->stringify(),"3.14159e+02");
+    cout << "Random Scientific-notation number(whole number from 1-100): " << randSci->stringify() << endl;
 }
 
 TEST(RandTests, PrecisionTest)  {
     BaseFactory* factory = new PrecisionFactory;
     Rand* randPrecision = factory->createRand();
-    ASSERT_EQ(randPrecision->stringify(),"314.159265359");
+    cout << "Random precision number(whole number from 1-100): " << randDouble->stringify() << endl;
 }
 
 
