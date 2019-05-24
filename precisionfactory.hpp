@@ -1,6 +1,6 @@
 #ifndef PRECISIONFACTORY_H
 #define PRECISIONFACTORY_H
-#include "basefactory.hpp"
+#include "base_factory.hpp"
 #include "precisionop.hpp"
 #include "precisionrand.hpp"
 
