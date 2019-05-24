@@ -27,13 +27,13 @@ TEST(OpTests, DoubleTest)  {
 TEST(OpTests, SciTest)  {
     BaseFactory* factory = new SciFactory;
     Op* sci = factory->createOp(420.6969696969);
-    ASSERT_EQ(sci->stringify(),"4.20696970e+02");
+    ASSERT_EQ(sci->stringify(),"4.206970e+02");
 }
 
 TEST(OpTests, PrecisionTest)  {
     BaseFactory* factory = new PrecisionFactory;
     Op* precis = factory->createOp(420.6969696969);
-    ASSERT_EQ(precis->stringify(),"420.696969696");
+    ASSERT_EQ(precis->stringify(),"420.696969697");
 }
 
 TEST(RandTests, DoubleTest)  {
