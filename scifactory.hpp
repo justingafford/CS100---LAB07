@@ -11,7 +11,7 @@ class SciFactory : public BaseFactory
          SciOp* temp = new SciOp* (value); 
          return temp;
      };
-     Rand* createRand(){return new SciRand()};
+     Rand* createRand(){return new SciRand();};
 
-}
+};
 #endif
