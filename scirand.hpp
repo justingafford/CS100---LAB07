@@ -10,7 +10,7 @@ class SciRand : public Rand
     protected:
         double num;
     public:
-        SciRand() { num = rand % 100; };
+        SciRand() { num = rand() % 100; };
         double evaluate() {};
         string stringify() {
             ostringstream obj;
