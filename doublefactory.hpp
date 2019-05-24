@@ -1,6 +1,6 @@
 #ifndef DOUBLEFACTORY_H
 #define DOUBLEFACTORY_H
-#include "basefactory.hpp"
+#include "base_factory.hpp"
 #include "doubleop.hpp"
 #include "doublerand.hpp"
 class DoubleFactory : public BaseFactory {
