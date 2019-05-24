@@ -41,7 +41,7 @@ TEST(RandTests, SciTest)  {
 
 }
 
-TEST(OpTests, PrecisionTest)  {
+TEST(RandTests, PrecisionTest)  {
 
 }
 
