@@ -15,3 +15,4 @@ class PrecisionFactory : public BaseFactory
      Rand* createRand(){return new PrecisionRand();};
 
 }
+#endif
