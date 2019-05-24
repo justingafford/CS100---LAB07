@@ -11,7 +11,7 @@ class PrecisionOp : public Op
         double num;
     public:
         PrecisionOp() { num = 0; };
-        PrecisonOp(double n) { num = n; };
+        PrecisionOp(double n) { num = n; };
         double evaluate() {};
         string stringify() {
             ostringstream obj;
