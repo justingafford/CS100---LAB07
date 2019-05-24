@@ -14,3 +14,4 @@ class SciFactory : public BaseFactory
      Rand* createRand(){return new SciRand()};
 
 }
+#endif
