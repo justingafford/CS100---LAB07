@@ -12,6 +12,6 @@ class PrecisionFactory : public BaseFactory
          PrecisionOp* temp = new PrecisionOp* (value); 
          return temp;
      };
-     Rand* createRand(){return new PrecisionRand()};
+     Rand* createRand(){return new PrecisionRand();};
 
 }
