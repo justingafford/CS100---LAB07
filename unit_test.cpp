@@ -60,7 +60,7 @@ TEST(RandTests, SciTest)  {
 TEST(RandTests, PrecisionTest)  {
     BaseFactory* factory = new PrecisionFactory;
     Rand* randPrecision = factory->createRand();
-    cout << "Random precision number(whole number from 1-100): " << randDouble->stringify() << endl;
+    cout << "Random precision number(whole number from 1-100): " << randPrecision->stringify() << endl;
 }
 
 
