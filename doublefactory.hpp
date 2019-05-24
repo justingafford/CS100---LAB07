@@ -10,7 +10,7 @@ class DoubleFactory : public BaseFactory {
          DoubleOp* temp = new DoubleOp* (value); 
          return temp;
      };
-     Rand* createRand(){return new DoubleRand()};
+     Rand* createRand(){return new DoubleRand();};
 
-}
+};
 #endif
