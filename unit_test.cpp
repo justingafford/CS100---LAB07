@@ -35,17 +35,31 @@ TEST(OpTests, PrecisionTest)  {
     Op* precis = factory->createOp(420.6969696969);
     ASSERT_EQ(precis->stringify(),"420.696969697");
 }
+//create randmock for testing, because we cannot know what numbers are, because they are random.
+class RandMock: public Rand {
+    public:
+        RandMock() {};
+
+        virtual double evaluate() { return 314.159265359; }
+        virtual string stringify() { return "314.159265359"; }
+};
 
 TEST(RandTests, DoubleTest)  {
-
+    BaseFactory* factory = new DoubleFactory;
+    RandMock* randDouble = factory->createRand();
+    ASSERT_EQ(randDouble->stringify(),"314.159265");
 }
 
 TEST(RandTests, SciTest)  {
-
+    BaseFactory* factory = new SciFactory;
+    RandMock* randSci = factory->createRand();
+    ASSERT_EQ(randSci->stringify(),"3.14159e+02");
 }
 
 TEST(RandTests, PrecisionTest)  {
-
+    BaseFactory* factory = new PrecisionFactory;
+    RandMock* randPrecision = factory->createRand();
+    ASSERT_EQ(randPrecision->stringify(),"314.159265359");
 }
 
 
