@@ -3,7 +3,7 @@
 #include "base_factory.hpp"
 #include "Rand.hpp"
 #include <sstream>
-
+#include <iomanip>
 
 class PrecisionRand : public Rand
 {
