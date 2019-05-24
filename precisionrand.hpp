@@ -10,7 +10,7 @@ class PrecisionRand : public Rand
     protected:
         double num;
     public:
-        PrecisonRand() { num = rand % 100; };
+        PrecisionRand() { num = rand % 100; };
         double evaluate() {};
         string stringify() {
             ostringstream obj;
