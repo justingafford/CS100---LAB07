@@ -10,7 +10,7 @@ class DoubleRand : public Rand
     protected:
         double num;
     public:
-        DoubleRand() { num = rand % 100; };
+        DoubleRand() { num = rand() % 100; };
         double evaluate() {};
         string stringify() {
             return to_string(num);
