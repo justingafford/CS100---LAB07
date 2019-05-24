@@ -1,5 +1,7 @@
 #ifndef __BASE_FACTORY_HPP__
 #define __BASE_FACTORY_HPP__
+#include "Rand.hpp"
+#include "Op.hpp"
 
 class BaseFactory {
     public:
