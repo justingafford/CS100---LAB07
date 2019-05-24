@@ -18,10 +18,10 @@
 #include "Pow.hpp"
 #include "gtest/gtest.h"
 
-TEST(IndvClassTest, OpTest)  {
+TEST(OpTests, DoubleTest)  {
 
-Op* op1 = new Op(5.0); 
-Op* op2 = new Op(2.0); 
+DoubleOp* op1 = new DoubleOp(5.0); 
+DoubleOp* op2 = new DoubleOp(2.0); 
 
 EXPECT_EQ(op1 -> evaluate(), 5.0);
 EXPECT_EQ(op2 ->stringify(), "2.000000");
