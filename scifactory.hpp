@@ -1,6 +1,6 @@
 #ifndef SCIFACTORY_H
 #define SCIFACTORY_H
-#include "basefactory.hpp"
+#include "base_factory.hpp"
 #include "sciop.hpp"
 #include "scirand.hpp"
 class SciFactory : public BaseFactory
